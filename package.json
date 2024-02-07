@@ -1,0 +1,35 @@
+{
+  "name": "demo4",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap-cloud-sdk/resilience": "^3.11.0",
+    "@sap/cds": "^7",
+    "@sap/cds-hana": "^2",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.120.2"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-prod": "cds watch --open prod/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-project1": "cds watch --open project1/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-dim": "cds watch --open dim/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/prod",
+    "app/project1",
+    "app/dim"
+  ],
+  "cds": {
+    "requires": {
+      "db": "hana"
+    }
+  }
+}
