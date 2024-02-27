@@ -37,6 +37,8 @@ annotate Dim with @Aggregation.ApplySupported: {
 
 
 
+
+
 entity student {
     key sid:Integer;
     sname:String;
